@@ -18,12 +18,12 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
 #     sql_on: ${users.id} = ${orders.user_id} ;;
 #   }
 # }
-map_layer: high_school_district_boundaries {
-  file: "/map_layer_files/High_School_Districts_+_Unified_Districts.geojson"
-  property_key: "LABEL"
-}
+# map_layer: high_school_district_boundaries {
+#   file: "/map_layer_files/High_School_Districts_+_Unified_Districts.geojson"
+#   property_key: "LABEL"
+# }
 map_layer: school_district_boundaries {
-  file: "/map_layer_files/School_District_Boundaries.geojson"
+  file: "/map_layer_files/HEU_school_districts.geojson"
   property_key: "LABEL"
 }
 

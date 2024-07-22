@@ -7,9 +7,9 @@ view: cal_enviro_full_data {
   # No primary key is defined for this view. In order to join this view in an Explore,
   # define primary_key: yes on a dimension that has no repeated values.
 
-    # Here's what a typical dimension looks like in LookML.
-    # A dimension is a groupable field that can be used to filter query results.
-    # This dimension will be called " 2019 Chronic Abs All" in Explore.
+  # Here's what a typical dimension looks like in LookML.
+  # A dimension is a groupable field that can be used to filter query results.
+  # This dimension will be called " 2019 Chronic Abs All" in Explore.
 
   dimension: _2019_chronic_abs_all {
     type: number
@@ -179,6 +179,5 @@ view: cal_enviro_full_data {
     type: location
     sql_latitude: ${TABLE}.Latitude ;;
     sql_longitude: ${TABLE}.Longitude ;;
-    map_layer_name: high_school_district_boundaries
   }
 }
