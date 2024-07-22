@@ -70,6 +70,7 @@ view: cal_enviro_full_data {
   dimension: district1 {
     type: string
     sql: ${TABLE}.District1 ;;
+    map_layer_name: school_district_boundaries
   }
 
   dimension: drink_wat_p {
@@ -173,5 +174,11 @@ view: cal_enviro_full_data {
   }
   measure: count {
     type: count
+  }
+  dimension: school_location {
+    type: location
+    sql_latitude: ${TABLE}.Latitude ;;
+    sql_longitude: ${TABLE}.Longitude ;;
+    map_layer_name: high_school_district_boundaries
   }
 }

@@ -18,3 +18,17 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
 #     sql_on: ${users.id} = ${orders.user_id} ;;
 #   }
 # }
+map_layer: high_school_district_boundaries {
+  file: "/map_layer_files/High_School_Districts_+_Unified_Districts.geojson"
+  property_key: "LABEL"
+}
+map_layer: school_district_boundaries {
+  file: "/map_layer_files/School_District_Boundaries.geojson"
+  property_key: "LABEL"
+}
+
+# map_layer: LA_district_boundaries {
+#   file: "/map_layer_files/School_District_Boundaries.geojson"
+#   property_key: "LABEL"
+# }
+explore: cal_enviro_full_data {}
